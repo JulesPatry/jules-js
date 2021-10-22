@@ -1,11 +1,12 @@
 {
   "name": "julespatry-js",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A library of server/client agnostic javascript functions",
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node delete-build-folder && tsc --outDir ./build && node copy-packagejson"
+    "build": "node delete-build-folder && tsc --outDir ./build && node copy-packagejson",
+    "publish": "npm run build && cd ./build && npm publish && cd .."
   },
   "author": "Jules Patry",
   "license": "ISC",
