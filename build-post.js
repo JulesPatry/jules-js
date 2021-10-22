@@ -1,5 +1,8 @@
 const fs = require('fs');
 
+console.log(`----`);
+console.log(`// Copying files into build folder`);
+
 fs.copyFile('package.json', 'build/package.json', (err) => {
   if (err) {
     console.log('Error Found:', err);
