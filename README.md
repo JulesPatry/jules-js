@@ -16,7 +16,7 @@ This is a library of server/client agnostic javascript functions. This is built 
 ## NPM Actions
 
 - `npm run build`: removes old build folder, runs typescript builder, then copies certain files required in the npm package like README and package.json
-- `npm run publish`: runs `npm run build`, cd's into the build folder, runs `npm publish`, cd's out of the build folder.
+- `npm run pub`: runs `npm run build`, cd's into the build folder, runs `npm publish`, cd's out of the build folder.
 
 ## Commits
 
@@ -27,7 +27,7 @@ This is a library of server/client agnostic javascript functions. This is built 
 TODO(Jules): improve this with github actions to publish anything merged into master branch
 
 - commit changes with the preface standard from `## Commits` section
-- run `npm run publish`
+- run `npm run pub`
 - git add -A
 - git commit -m 'v0.0.x`
 - git push origin branch-name
