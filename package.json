@@ -5,7 +5,8 @@
   "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node delete-build-folder && tsc --outDir ./build && node copy-packagejson"
+    "build": "node delete-build-folder && tsc --outDir ./build && node copy-packagejson",
+    "publish": "cd ./build && npm publish && cd .."
   },
   "author": "Jules Patry",
   "license": "ISC",
