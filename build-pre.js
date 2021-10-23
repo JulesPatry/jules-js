@@ -1,7 +1,7 @@
 const fs = require('fs');
 const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf-8'));
 
-console.log(`Publishing v${packageJson.version} to npm and updating github master`);
+console.log(`Building v${packageJson.version}`);
 console.log(`----`);
 console.log(`// Deleting original build folder (if it exists)`);
 
